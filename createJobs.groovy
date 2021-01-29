@@ -5,4 +5,16 @@ pipelineJob('pipelineJob') {
             sandbox()
         }
     }
+    definition {
+        cpsScm {
+            scm {
+                git {
+                    remote {
+                        url 'https://github.com/elallaoui-m/spring-demo.git'
+                    }
+                    branch 'main'
+                }
+            }
+        }
+    }
 }
