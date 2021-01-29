@@ -13,7 +13,9 @@ pipelineJob('theme-park-job') {
             scm {
                 git {
                     remote {
-                        url 'https://github.com/elallaoui-m/spring-demo.git'
+                       github('elallaoui-m/spring-demo','ssh')
+                       credentials('github-elallaoui-ci-key') 
+                        
                     }
                     branch 'master'
                 }
