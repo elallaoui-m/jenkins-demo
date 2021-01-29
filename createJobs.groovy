@@ -14,7 +14,7 @@ pipelineJob('theme-park-job') {
                 git {
                     remote {
                        github('elallaoui-m/spring-demo','ssh')
-                       credentials('github-elallaoui-ci-key') 
+                       credentials('jenkins-demo-test') 
                         
                     }
                     branch 'master'
