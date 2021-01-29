@@ -5,6 +5,9 @@ pipelineJob('pipelineJob') {
             sandbox()
         }
     }
+}
+
+pipelineJob('theme-park-job') {
     definition {
         cpsScm {
             scm {
@@ -12,7 +15,7 @@ pipelineJob('pipelineJob') {
                     remote {
                         url 'https://github.com/elallaoui-m/spring-demo.git'
                     }
-                    branch 'main'
+                    branch 'master'
                 }
             }
         }
