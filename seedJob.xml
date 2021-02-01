@@ -8,11 +8,13 @@
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
         <url>https://github.com/elallaoui-m/jenkins-demo.git</url>
+        <!-- <credentialsid>jenkins-demo-test</credentialsid> -->
+        <credentialsid>tmp-creds</credentialsid>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
     <branches>
       <hudson.plugins.git.BranchSpec>
-        <name>*/master</name>
+        <name>*/main</name>
       </hudson.plugins.git.BranchSpec>
     </branches>
     <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
