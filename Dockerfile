@@ -1,6 +1,6 @@
 FROM jenkins/jenkins:2.271-jdk11
 
-COPY ./creds/secret.key ./creds/credentials.xml ./identity.key.enc /var/jenkins_home
+COPY ./creds/secret.key ./creds/credentials.xml ./creds/identity.key.enc /var/jenkins_home
 COPY ./creds/users /var/jenkins_home/users
 COPY ./creds/secret /var/jenkins_home/secret
 
