@@ -10,7 +10,7 @@ project.version = scmVersion.version
 docker {
     name "${project.name}:${project.version}"
     files "plugins.txt", "seedJob.xml"
-    folders "creds"
+    copySpec.from("./creds").into("creds")
 }
 
 dockerRun {
