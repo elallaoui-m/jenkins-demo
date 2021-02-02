@@ -13,7 +13,7 @@ pipelineJob('theme-park-job') {
             scm {
                 git {
                     remote {
-                       github('elallaoui-m/spring-demo','ssh')
+                       github('elallaoui-m/spring-demo')
                        credentials('tmp-creds') 
                     }
                     branch 'master'
