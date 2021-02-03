@@ -1,9 +1,9 @@
 FROM jenkins/jenkins:2.271-jdk11
 
-COPY ./creds/secret.key ./creds/credentials.xml /var/jenkins_home/
-RUN rm /var/jenkins_home/identity.key.enc
+COPY ./creds/credentials.xml /var/jenkins_home/
+# RUN rm /var/jenkins_home/identity.key.enc
 # COPY ./creds/users /var/jenkins_home/users
-COPY ./creds/secrets /var/jenkins_home/secrets
+# COPY ./creds/secrets /var/jenkins_home/secrets
 
 
 COPY ./creds/plugins.txt /usr/share/jenkins/ref/plugins.txt
