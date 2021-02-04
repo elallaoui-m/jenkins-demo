@@ -14,7 +14,7 @@ pipelineJob('theme-park-job') {
                 git {
                     remote {
                        github('elallaoui-m/spring-demo')
-                       //credentials('tmp-creds') 
+                       credentials('tmp-creds') 
                     }
                     branch 'master'
                 }
