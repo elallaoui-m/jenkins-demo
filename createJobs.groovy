@@ -19,6 +19,9 @@ pipelineJob('theme-park-job') {
                     branch 'master'
                 }
             }
+            triggers {
+                githubPush()
+            }
         }
     }
 }
