@@ -44,3 +44,41 @@ pipelineJob('cmi-service') {
         }
     }
 }
+
+pipelineJob('backoffice-service') {
+    definition {
+        cpsScm {
+            scm {
+                git {
+                    remote {
+                       github('ENSAPAY/BackOfficeBack')
+                       credentials('tmp-creds') 
+                    }
+                    branch 'master'
+                }
+            }
+            triggers {
+                githubPush()
+            }
+        }
+    }
+}
+
+pipelineJob('redal-service') {
+    definition {
+        cpsScm {
+            scm {
+                git {
+                    remote {
+                       github('ENSAPAY/redal-nest')
+                       credentials('tmp-creds') 
+                    }
+                    branch 'main'
+                }
+            }
+            triggers {
+                githubPush()
+            }
+        }
+    }
+}
